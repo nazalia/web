@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MataGarage</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles2.css">
+    
+</head>
+
+<body>
+    <header class="siteHeader inicio">
+    <!--<div class= "top_panel_wrap top_panel_style_3 scheme_original menu_show" style="margin-top: 0px;">
+     <div class="top_panel_wrap_inner top_panel_inner_style_3 top_panel_position_over ">-->
+     
+      <!--<div class="top_panel_top">
+        <div class="content_wrap clearfix"> 
+            <div class="top_panel_top_contact_area"> MATA GARAGE- LIMPIEZA Y ESTETICA AUTOMOTRÍZ</div>
+            <div class="top_panel_top_user_area"></div>
+            
+        </div>
+       </div>
+      </div> -->
+      <!--
+      <div class="top_panel_middle">
+                <div class="content_wrap">
+                    <div class="contact_logo">
+                                <div class="logo">
+            <a href=""><img src="img/logo.png" class="" alt="" width="350" height="220"></a>
+        </div>-->
+  </div>
+        <div class="contenedor contenidoHeader">
+          <div class="barra">
+            <a href="index.html"><img src="" alt=""></a>
+              
+            <div class="mobileMenu"> <!-- Apertura menu-movil, menu para el telefono móvil, se realizan las barran con el span para dar efecto de tipo sandiwch, su vista sera para telefono movil y se accionara con jQuery y CSS -->
+              <span></span>
+              <span></span>
+              <span></span>
+            </div> <!-- Cierre menu-movil -->
+
+                <nav id="navegacion" class="navegacion">
+                   <a href="index2.html">Inicio</a>
+                    <a href="nosotros.html#nosotros">Nosotros</a>
+                    <a href="portafolios.html#portafolios">Portafolio</a>
+                    <a href="Servicios.html#servicios">Servicios</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <div class="top_panel_middle">
+                <div class="content_wrap">
+                    <div class="contact_logo">
+                                <div class="logo">
+            <a href=""><img src="img/logo.png" class="" alt="" width="400" height="220"></a>
+            <h1>Expertos en estética Automotríz.</h1>
+        </div>
+        </div>
+    
+   
+    </header>
+    
+    </header>
+ 
+       <!-- Page Content -->
+  <div class="contenedorAnuncios">
+
+        <div class="row">
+
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="img/tablerosuc.png" class="fancybox" rel="ligthbox">
+                    <img  src="img/tablerosuc.png" class="zoom img-fluid "  alt="">
+                   
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="img/motorkia.png"  class="fancybox" rel="ligthbox">
+                    <img  src="img/motorkia.png" class="zoom img-fluid"  alt="">
+                </a>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="img/renau.png" class="fancybox" rel="ligthbox">
+                    <img  src="img/renau.png" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+       </div>
+    </div>
+    <script>
+       $(document).ready(function(){
+  $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+    
+    $(".zoom").hover(function(){
+    
+    $(this).addClass('transition');
+  }, function(){
+        
+    $(this).removeClass('transition');
+  });
+});
+    </script>
+
+
+    
+
+    <footer class="siteFooter seccion">
+        <div class="contenedor contenedorFooter">
+            <nav class="navegacion">
+                <a href="index2.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+
+            <p class="copyright">Todos los Derechos Reservados 2019 &copy </p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+     
+
+   
+</body>
+
+</html>

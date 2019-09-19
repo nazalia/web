@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Modal dialog en Bootstrap</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <h2>Lenguajes de programación</h2>
+    <ul class="list-group">
+      <li class="list-group-item" onclick="abrirModal(0)">Java Script</li>
+      <li class="list-group-item" onclick="abrirModal(1)">PHP</li>
+      <li class="list-group-item" onclick="abrirModal(2)">Python</li>
+    </ul>
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="modal-title">Título del modal</h4>
+          </div>
+          <div class="modal-body" id="modal-body">
+            <p>Cuerpo del modal;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Aceptar</button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <script>
+      // Listado de lenguajes de programación
+      var lenguajes = [{nombre: 'Java Script', descripcion: 'JavaScript (abreviado comúnmente "JS") es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.'},
+                       {nombre: 'PHP', descripcion: 'PHP es un lenguaje de programación de uso general de código del lado del servidor originalmente diseñado para el desarrollo web de contenido dinámico.'},
+                       {nombre: 'Python', descripcion: 'Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en una sintaxis que favorezca un código legible.'}]
+      // Función para abrir un modal y agregar la información
+      // del lenguaje del indice pasado por parámetro
+      function abrirModal(indice){
+        $('#modal-title').html(lenguajes[indice].nombre);
+        $('#modal-body').html('<p>' + lenguajes[indice].descripcion + '</p>');
+        $('#myModal').modal('show');
+      }
+    </script>
+  </body>
+</html>
